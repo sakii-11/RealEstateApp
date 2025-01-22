@@ -3,6 +3,9 @@ import "./global.css";
 import { useEffect } from "react";
 import { useFonts } from "expo-font";
 import GlobalProvider from "@/lib/global-provider";
+import { LogBox } from 'react-native';
+
+LogBox.ignoreAllLogs();
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
